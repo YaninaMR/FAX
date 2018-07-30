@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Enlazamos nuestro framework _materialize_ -->
+    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+    <!-- Enlazamos nuestra hoja de estilo css -->
+    <link rel="stylesheet" href="../css/register.css">
+    <!-- Enlazamos nuestro logo -->
+    <link rel="shortcut icon" href="../assets/logo/flower.png">
+    <!-- Enlazamos los íconos de mayterialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Enlazamos íconos de fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frente Amplio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="../assets/logo/flower.png" class="logo-img responsive-img" alt="">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Regístrate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="row section">
+            <div class="slider col l6 offset-l1 hide-on-small-only style-slider responsive-img" id="fullscreen">
+                <ul class="slides">
+                    <li>
+                        <img src="../assets/img/salcahuasi.png">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>SALCAHUASI ... Y ANEXOS!</h3>
+                            <h5 class="light grey-text text-lighten-3">Conviérte en el mejor hincha de tu anexo.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../assets/img/img-index/marca.png">
+                        <!-- random image -->
+                        <div class="caption left-align ">
+                            <h3></h3>
+                            <h5 class="light grey-text text-lighten-3"></h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../assets/img/img-index/fa2.jpg" class="fa-style">
+                        <!-- random image -->
+                        <div class="caption right-align">
+                            <h3></h3>
+                            <h5 class="light grey-text text-lighten-3"></h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../assets/img/img-index/nueva-alianza.jpg">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Vive experiencias increíbles ...recorriendo Salcahuasi!</h3>
+                            <h5 class="light grey-text text-lighten-3">Nadie puede hacer todo, pero todos podemos hacer algo.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s8 offset-s2 col l3 offset-l1">
+                <div class="col s12 m12 white t-row hoverable style-login">
+                    <div class="card no-shadow transparent">
+                        <div class="card-content">
+                            <span class="card-title">Registrate</span>
+                              <form class="col s12">
+                                <div class="row">  
+                                 <h3></h3>
+                                </div>
+                                <div class = "row">
+                                    <h2>Selecciona tu anexo de Salcahuasi</h2>
+                                    <select class = "browser-default">
+                                           <option value = "" disabled selected>Seleccionar</option>
+                                           <option value = "1">Salcahuasi</option>
+                                           <option value = "2">San Jose</option>
+                                           <option value = "3">Urpay</option>
+                                    </select>
+                                </div>
+                                 <!--  <div class="card-action center col s12 l12">
+                                        <a id="login" class="btn-flat">
+                                            Login
+                                            <i class="material-icons right loginFly">send</i>
+                                        </a>
+                                    </div>-->
+                                  <!--  <div class="input-field">
+                                        <input id="password" type="password" class="teal-text">
+                                        <label for="password">Clave</label>
+                                    </div>
+                                </div>-->
+                            </form>
+                           <!-- <p>
+                                <input type="checkbox" id="remember" />
+                                <label for="remember">Recuérdame</label>
+                            </p>-->
+                        </div>
+                        <!-- Enlazamos las redes sociales para loguearse -->
+                        <div class="center-align">
+                        <!-- <div class="col s4 l4">
+                                <button type="button" name="button" class="waves-effect waves-light btn-floating social google" id="google" style="background: #dd4b39">
+                                    <i class="fa fa-google"></i> Ingresa con Google
+                                </button>
+                         </div> -->
+                            <div class="col s12 l12">
+                                <a class="waves-effect waves-light btn  social facebook" id="btn-facebook">
+                                  <i class="fa  fa-facebook"><span></span></i>Ingresar con facebook</a>
+                            </div>
+                        <!--    <div class="col s4 l4">
+                                <a class="waves-effect waves-light btn-floating social twitter" id="twitter" style="background: #55acee">
+                                    <i class="fa fa-twitter"></i> Ingresa con Twitter
+                                </a>
+                            </div>-->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Enlazamos la librería Jquery -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Enlazamos nuestro proyecto de firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDeQDnohUByeKCKWS3EFSLHA_ewvWnrijE",
+        authDomain: "elecciones-84efd.firebaseapp.com",
+        databaseURL: "https://elecciones-84efd.firebaseio.com",
+        projectId: "elecciones-84efd",
+        storageBucket: "elecciones-84efd.appspot.com",
+        messagingSenderId: "222105069359"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Enlazamos el archivo jquery de materialize -->
+    <script src="../vendors/materialize/js/materialize.min.js"></script>
+    <!-- Enlazamos nuestro archivo JS -->
+    <script src="../js/register.js"></script>
+</body>
+</html>

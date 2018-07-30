@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Enlazamos nuestro framework _materialize_ -->
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <!-- Enlazamos nuestros icons de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Enlazamos nuestros icons de Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Enlazamos nuestra hoja de estilo css -->
+  <link rel="stylesheet" href="../css/profile.css">
+  <!-- Enlazamos nuestro logo -->
+  <link rel="shortcut icon" href="../assets/logo/logo-sinfondo1.png">
+  <title>Q'apiriy</title>
+</head>
+
+<body>
+  <header>
+    <!-- Barra de Navegación-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../views/newsfeed.html">
+          <img src="../assets/logo/logo-navbar.png" class="logo" alt="">
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down list-home">
+          <li>
+            <div id="root" class="image-container">
+              <img id="imgprofile" class="circle img-perfil" src="">
+            </div>
+          </li>
+          <li>
+            <a class="btn btn-floating white pulse">
+              <i class="material-icons" style="color: black">cloud</i>
+            </a>
+          </li>
+          <li>
+            <a href="view-profile.html" class="btn btn-floating white cyan">
+              <i class="material-icons" style="color: black">account_circle</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Perfil de usuario -->
+    <div class="parallax-container">
+        <div class="parallax"><img class="responsive-img" src="../assets/img/paisaje.jpg"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- Columna con la imagen y el nombre del usuario-->
+        <div class="col s12 m7">
+          <h2 class="header">Juan Ramos</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="../assets/img/mochilero.jpg">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>Ser voluntario me ha hecho crecer mucho como persona. Me gusta aportar algo a los demás y tratar de ser útil
+                  a gente que lo necesita.</p>
+              </div>
+              <div class="card-action">
+                <a href="user.html">Amigos</a>
+              </div>
+              <div class="card-action">
+                <a href="espacioFotos.html">Galería de Fotos</a>
+              </div>
+              <div class="card-action">
+                <a href="userChat.html">Mensajes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- Textarea para agregar nuevas publicaciones -->
+          <div class="row">
+            <div class="container">
+                <div class="profile-post">
+                    <form action="">
+                      <textarea id="text-area" class="noscroll" clid="textarea1" placeholder="¿Algo que compartir?"></textarea>
+                      <button id="post-btn" class="waves-effect waves-light btn right" type="submit" value="publica" disabled>Publica</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="profile-posts-container">
+
+          </div>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                        <div class="col s12 col l12">
+                            <img class="responsive-img" src="../assets/img/noticialourdes.png" alt="">
+                        </div>
+                    <div class="collapsible-body">
+                        <span>Voluntariado en Orfanatos (Ayacucho)
+                                
+                                Existen dos tipos de Orfanatos en los que el participante puede apoyar. El primero es para niños abandonados o huérfanos de edades entre 1 semana de nacidos hasta 2 años de edad y el el orfanato para niños entre 2 a 17 años de edad, en el cual hay aproximadamente 70 niños y niñas. Los orfanatos proveen refugio, además brinda atención y  alimentación a los niños. Los voluntarios podrán ayudar en diferentes áreas del orfanato como en el cuidado y atención de los niños, así como también podrán jugar con ellos, asistir en su labores escolares, ayudar en la preparación de sus comidas, alimentarlos, etc.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <div class="chip">
+                            <img src="../assets/img/joalbert.png" alt="Contact Person">
+                                Joalbert 
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <div class="comentary">
+                            <span> Juan, me parece una estupenda oportunidad. Coordinemos con los chicos de la promo</span>
+                        </div>
+                    </div>
+                    <div class="collapsible">
+                        <span>El miércoles 11 de octubre en conjunto con el área de Asuntos Corporativos de Mondelēz, realizamos una jornada de talleres educativos y mejora de infraestructura donde 50 voluntarios de la empresa,  tuvieron la oportunidad de compartir sus habilidades con más de 20  niños del Centro de Atención Residencial (CAR)  Lazos de Amor, ubicado en Pueblo Libre.
+
+                            El CAR Lazos de Amor alberga a niños, niñas y adolescentes en situación de abandono, brindándoles educación y vivienda, sin embargo, debido al bajo presupuesto, aún tienen algunos problemas de infraestructura y no tienen la posibilidad de desarrollar muchas actividades extracurriculares.</span>
+                            <div class="collapsible">
+                                <img class="responsive-img" src="../assets/img/tester4.png" alt="">
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- Enlazamos la librería Jquery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Enlazamos nuestro proyecto de firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- Enlazamos el archivo jquery de materialize -->
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+  <!-- Enlazamos nuestro archivo JS de vista Profile´+-->
+  <script src="../js/profile.js"></script>
+</body>
+
+</html>
